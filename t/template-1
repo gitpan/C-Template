@@ -1,0 +1,6 @@
+[% FOR i IN [0, 1, 2, 3] %]
+[% i %]
+[% END # i %]
+#line
+This is line five.
+

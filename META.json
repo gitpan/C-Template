@@ -32,7 +32,8 @@
       },
       "runtime" : {
          "requires" : {
-            "C::Utility" : "0.001"
+            "C::Utility" : "0.001",
+            "Template" : "0"
          }
       }
    },
@@ -45,5 +46,5 @@
          "url" : "https://github.com/benkasminbullock/C-Template"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

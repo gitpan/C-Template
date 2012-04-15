@@ -19,7 +19,8 @@ no_index:
     - inc
 requires:
   C::Utility: 0.001
+  Template: 0
 resources:
   bugtracker: https://github.com/benkasminbullock/C-Template/issues
   repository: https://github.com/benkasminbullock/C-Template
-version: 0.01
+version: 0.02

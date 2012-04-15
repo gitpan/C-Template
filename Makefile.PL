@@ -13,6 +13,7 @@ WriteMakefile (
     LICENSE => 'perl',
     PREREQ_PM => {
         'C::Utility' => '0.001',
+        'Template' => '0',
     },
     META_MERGE => {
         resources => {

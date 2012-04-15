@@ -1,7 +1,7 @@
 package C::Template;
 use warnings;
 use strict;
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 use Template;
 use Template::Filters;
@@ -111,5 +111,13 @@ format argument for printf-style functions without interpolation of
 arguments.
 
 =head1 BUGS
+
+=head1 AUTHOR
+
+Ben Bullock, <bkb@cpan.org>
+
+=head1 COPYRIGHT AND LICENCE
+
+Same as Perl.
 
 

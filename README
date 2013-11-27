@@ -6,7 +6,7 @@
                                    |_|                    
 
 
-This is the README for C::Template version 0.03.
+This is the README for C::Template version 0.04.
 
 C::Template is a "module" for the Perl computer programming language, a library
 of computer code to install on a computer.  This document contains four
@@ -57,11 +57,11 @@ If you have the App::cpanminus installer, you may prefer
 
     cpanm C::Template
 
-To install the module from the source file, C-Template-0.03.tar.gz, follow this
+To install the module from the source file, C-Template-0.04.tar.gz, follow this
 sequence of commands:
 
-    tar xfz C-Template-0.03.tar.gz
-    cd C-Template-0.03
+    tar xfz C-Template-0.04.tar.gz
+    cd C-Template-0.04
     perl Makefile.PL
     make
     make install
@@ -86,6 +86,6 @@ repository on github at
 
 -----------------------------------------------------------------------------
 
-This README was written on Wed Nov 27 18:40:21 2013.
+This README was written on Wed Nov 27 18:45:52 2013.
 
 -----------------------------------------------------------------------------

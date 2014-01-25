@@ -21,4 +21,6 @@ WriteMakefile (
             bugtracker => "$repo/issues",
         },
     },
+    # There is a fail for Perl 5.6.2 on Cpan testers.
+    MIN_PERL_VERSION => '5.008001',
 );

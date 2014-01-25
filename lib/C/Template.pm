@@ -1,7 +1,7 @@
 package C::Template;
 use warnings;
 use strict;
-our $VERSION = 0.04;
+our $VERSION = '0.05';
 
 use Template;
 use Template::Filters;
@@ -94,30 +94,58 @@ the include path,
     $ct->process ('input-template', \%vars, 'output');
 
 This processes C<input-template> into C<output>. C<output> is normally
-a C file.
+a C file. If the input contains a line
+
+    #line
+
+it will be processed into "#line 4" with the line number added.
 
 =head1 FILTERS
 
 =head2 c
+
+In the Perl program:
+
+    $vars{stuff} = 'test "string" 100%'
+
+In the template:
+
+    [% stuff | c %]
+
+Output is
+
+    "test \"string\" 100%"
 
 The C<c> filter changes its input into a C string. Percentage signs
 '%' are not changed.
 
 =head2 cpc
 
+In the Perl program:
+
+    $vars{stuff} = 'test "string" 100%'
+
+In the template:
+
+    [% stuff | cpc %]
+
+Output is
+
+    "test \"string\" 100%%"
+
 The C<cpc> filter changes its input into a C string. Percentage signs
 are changed from '%' to '%%' so that the string can be used as the
 format argument for printf-style functions without interpolation of
 arguments.
 
-=head1 BUGS
+=head1 AUTHOR AND COPYRIGHT
 
-=head1 AUTHOR
+Ben Bullock, <bkb@cpan.org>, copyright (c) 2012-2014
 
-Ben Bullock, <bkb@cpan.org>
+=head1 LICENCE
 
-=head1 COPYRIGHT AND LICENCE
+This may be used, redistributed, and modified under the same terms as
+Perl itself.
 
-Same as Perl.
 
 
